@@ -11,3 +11,9 @@ layout: nil
 
 3. If your image is successfully built, you can test with: `docker run -p <port>:<port> question`
 You must substitute the __port__ parameter with the port described in the Dockerfile/application. Usually 3000, 5000 or 8000.
+
+The Configuration questions dockerfiles are available to download [here]({{ site.url }}/downloads/config.zip).
+
+The General questions dockerfiles are available to download [here]({{ site.url }}/downloads/general.zip).
+
+The Date containing every question analyzed and our results are available to download [here]({{ site.url }}/downloads/data.zip).

@@ -1,1 +1,6 @@
-theme: jekyll-theme-minimal
+---
+exclude: ['README.markdown']
+permalink: ':title'
+highlighter: true
+safe: false
+title: 'On Using Docker to Improve Experience of Q&A Forum Users in Web Framework Development'

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<head>
+  <title>On Using Docker to Improve Experience of Q&A Forum Users in Web Framework Development</title>
+  <meta charset='utf-8'/>
+  <meta name='description' content='Documentation website'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+  <link href='assets.css' rel='stylesheet' type='text/css'>
+</head>
+<body>  
+  <nav id='sidebar'>
+	<h1>On Using Docker to Improve Experience of Q&A Forum Users in Web Framework Development</h1>
+<ul id='links'>
+  
+    
+    <li><a href='#/stack-query'>StackOverflow query</a></li>
+    
+  
+    
+    <li><a href='#/how-to-test'>How to run our Dockerfiles</a></li>
+    
+  
+    
+    <li><a href='#/example1'>Example from Section II</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+  <li><h2>Configuration</h2>
+    <ul>
+    
+              
+        <li class=''><a href='#'></a></li>
+      
+    
+              
+        <li class=''><a href='#/config-larvel'>[Configuration] Laravel</a></li>
+              
+        <li class=''><a href='#/config-flask'>[Configuration] Flask</a></li>
+      
+    
+    </ul>
+  </li>
+
+  <li><h2>General</h2>
+    <ul>
+    
+              
+        <li class=''><a href='#'></a></li>
+      
+    
+              
+        <li class=''><a href='#/howto-rails'>[General] Rails</a></li>
+              
+        <li class=''><a href='#/howto-laravel'>[General] Laravel</a></li>
+              
+        <li class=''><a href='#/howto-flask'>[General] Flask</a></li>
+              
+        <li class=''><a href='#/howto-express'>[General] Express</a></li>
+              
+        <li class=''><a href='#/howto-django'>[General] Django</a></li>
+      
+    
+    </ul>
+  </li>
+
+</ul>
+</nav>
+
+<section id='content'>
+
+  <article class=''>
+    <a name='/stack-query' href='#/stack-query'><h2>StackOverflow query</h2></a>
+    <section class='body'>
+      <p>To select our questions, we had to create a SQL Query for <a href="https://data.stackexchange.com/stackoverflow/query/621859">StackExchange Data Explorer</a>.</p>
+
+<p>The query file is available to download <a href="/downloads/query.sql">here</a>.</p>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/how-to-test' href='#/how-to-test'><h2>How to run our Dockerfiles</h2></a>
+    <section class='body'>
+      <ol>
+  <li>
+    <p>You must open a shell inside the folder of the question you want to run:
+<code>docker build -t question .</code></p>
+  </li>
+  <li>
+    <p>After that, you will build the image. The images that are not successfully built demonstrate a problem during the system environment configuration described at the question.</p>
+  </li>
+  <li>
+    <p>If your image is successfully built, you can test with: <code>docker run -p &lt;port&gt;:&lt;port&gt; question</code>
+You must substitute the <strong>port</strong> parameter with the port described in the Dockerfile/application. Usually 3000, 5000 or 8000.</p>
+  </li>
+</ol>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/example1' href='#/example1'><h2>Example from Section II</h2></a>
+    <section class='body'>
+      <h3 id="response">Response</h3>
+
+<p>Sends back a collection of things.</p>
+
+<p><code>Authentication: bearer TOKEN</code>
+<code>{
+    id: thing_2,
+    name: 'My second thing'
+}</code></p>
+
+<p>For errors responses, see the <a href="#response-status-codes">response status codes documentation</a>.</p>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/howto-rails' href='#/howto-rails'><h2>[General] Rails</h2></a>
+    <section class='body'>
+      
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/howto-laravel' href='#/howto-laravel'><h2>[General] Laravel</h2></a>
+    <section class='body'>
+      
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/howto-flask' href='#/howto-flask'><h2>[General] Flask</h2></a>
+    <section class='body'>
+      
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/howto-express' href='#/howto-express'><h2>[General] Express</h2></a>
+    <section class='body'>
+      
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/howto-django' href='#/howto-django'><h2>[General] Django</h2></a>
+    <section class='body'>
+      
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/config-larvel' href='#/config-larvel'><h2>[Configuration] Laravel</h2></a>
+    <section class='body'>
+      
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/config-flask' href='#/config-flask'><h2>[Configuration] Flask</h2></a>
+    <section class='body'>
+      
+
+    </section>
+  </article>
+
+</section>
+
+  
+  <!--[if lt IE 9]><script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
+  <script src='assets.js' type='text/javascript'></script>
+  <script>require('boot');</script>
+</body>
+</html>

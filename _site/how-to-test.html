@@ -1,0 +1,13 @@
+<ol>
+  <li>
+    <p>You must open a shell inside the folder of the question you want to run:
+<code>docker build -t question .</code></p>
+  </li>
+  <li>
+    <p>After that, you will build the image. The images that are not successfully built demonstrate a problem during the system environment configuration described at the question.</p>
+  </li>
+  <li>
+    <p>If your image is successfully built, you can test with: <code>docker run -p &lt;port&gt;:&lt;port&gt; question</code>
+You must substitute the <strong>port</strong> parameter with the port described in the Dockerfile/application. Usually 3000, 5000 or 8000.</p>
+  </li>
+</ol>
